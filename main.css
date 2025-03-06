@@ -7,11 +7,12 @@
         }
     
     body{
-    background-color: lightsteelblue;
+    background-color: #f1b4c2;
     font-family: 'Roslindale', sans-serif;
 }
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
+    /*where to change width of columns*/
     width: min(100% - 3rem, 80ch);
     margin-inline: auto;
 }
@@ -28,24 +29,30 @@ grid-template-areas:
     "a a";
 }
 
-.history {
+#history {
 grid-area: h;
 }
 
-.variations{
+#variations{
 grid-area: v;
 }
 
-.alphabet {
+#alphabet {
 grid-area: a;
 }
 }
 /* CSS for the footer */
 footer{
     background-color: gray;
+    height: 50px;
 }
 
-/* variable font animation */
+h2{
+    color:aliceblue;
+    font-variation-settings: "opsz" 10, "wdth" 200, "wght" 75, "slnt" 0;
+
+}
+/* font styling area */
 h3{
     font-weight:20; 
     text-align: center;
