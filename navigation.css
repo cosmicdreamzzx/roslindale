@@ -121,6 +121,7 @@
       transition: opacity 250ms ease-in-out 350ms;
   }
   
+
   @media screen and (min-width: 800px) {
     .nav-checkbox-icon {
       display: none;
