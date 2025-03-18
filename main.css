@@ -36,6 +36,7 @@ grid-area: h;
 #variations{
 grid-area: v;
 }
+/* button styling */
 
 #alphabet {
 grid-area: a;
@@ -45,16 +46,11 @@ grid-area: a;
 footer{
     background-color: #eadfe1;
     height: 50px;
-    .outline {
-        background-color: transparent;
-        color: #f1b4c2;
-        border: 2px solid #EE2A7B;
-        transition: all 0.3s ease;
-    }
+
 }
 
 h2{
-    color:aliceblue;
+    color:#f0f8ff;
     font-variation-settings: "opsz" 10, "wdth" 200, "wght" 75, "slnt" 0;
 
 }
@@ -100,3 +96,26 @@ h3{
     font-variation-settings: "wght" 120, "wdth" 0, "XXXX" 100;
 }
 
+/* link styling */
+a .outline{
+    text-decoration: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 20px 20px;
+    border-radius: 10px;
+    font-size: 40px;
+}
+.outline {
+    text-decoration: none;
+    background-color: rgba(0, 123, 255, 0);
+    color: #EE2A7B;
+    border: 2px solid #EE2A7B;
+    transition: all 0.3s ease;
+    
+}
+
+.outline:hover {
+    background-color: #EE2A7B;
+    color: #fff;
+}

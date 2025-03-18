@@ -19,7 +19,7 @@
   }
   header {
     /* where to set the color of the nav bar */
-      background: #eadfe1;
+      background: hwb(349 87% 8%);
       text-align: center;
       top:0px;
       position: fixed;
