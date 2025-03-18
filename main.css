@@ -43,8 +43,14 @@ grid-area: a;
 }
 /* CSS for the footer */
 footer{
-    background-color: gray;
+    background-color: #eadfe1;
     height: 50px;
+    .outline {
+        background-color: transparent;
+        color: #f1b4c2;
+        border: 2px solid #EE2A7B;
+        transition: all 0.3s ease;
+    }
 }
 
 h2{
