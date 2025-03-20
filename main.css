@@ -1,3 +1,9 @@
+body {
+    background-image: url("assets/SVG/SVG/Asset\ 1-100.jpg");
+    background-size: cover;
+    height: 590vh;
+
+    }
 @font-face {
     src: url("fonts/RoslindaleVariable[opsz\,slnt\,wdth\,wght]-Edu.woff2") format("woff2"),
          url('fonts/RoslindaleVariable[opsz\,slnt\,wdth\,wght]-Edu.woff') format("woff");
@@ -9,6 +15,12 @@
     body{
     background-color: #f1b4c2;
     font-family: 'Roslindale', sans-serif;
+}
+.hero {
+    background-image: url("assets/SVG/AHHH.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
@@ -94,7 +106,7 @@ animation: weightvariable 5s infinite;
     0%, 100%{
         font-variation-settings: "opsz" 48, "wdth" 100, "wght" 0, "slnt" 0;
     }
-    50%{font-variation-settings: "opsz" 48, "wdth" 900, "wght" 0, "slnt" .5;
+    50%{font-variation-settings: "opsz" 48, "wdth" 900, "wght" 0, "slnt" 0;
     }
 }
     .size
@@ -191,7 +203,3 @@ a .outline{
     text-align: center;     /* Center-align text */
 }
 
-body{
-    background-image: ;
-
-}
