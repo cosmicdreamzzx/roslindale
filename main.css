@@ -1,19 +1,21 @@
 body {
-    background-image: url("assets/SVG/SVG/Asset\ 1-100.jpg");
+    background-image: url("assets/SVG/SVG/Asset\ 1.svg");
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 590vh;
+    height:280vh;
 
-    }
+    } 
 @font-face {
     src: url("fonts/RoslindaleVariable[opsz\,slnt\,wdth\,wght]-Edu.woff2") format("woff2"),
          url('fonts/RoslindaleVariable[opsz\,slnt\,wdth\,wght]-Edu.woff') format("woff");
         font-family: 'Roslindale';
         font-style: normal;
         font-weight: normal;
+        font-size: xx-large;
         }
     
     body{
-    background-color: #f1b4c2;
+    background-color: #FAC2C4;
     font-family: 'Roslindale', sans-serif;
 }
 .hero {
@@ -86,27 +88,24 @@ h3{
 }
 
 /* animation */
-.weight{
-animation: weightvariable 5s infinite;
-
-}
-@keyframes weightvariable {
-    0%, 100%{
-        font-variation-settings: "opsz" 48, "wdth" 0, "wght" 75, "slnt" 0;
-    }
-    50%{font-variation-settings: "opsz" 48, "wdth" 0, "wght" 100, "slnt" .5;
-    }
-    
-}
-
 .width{
-    animation: widthvariable 5s infinite;
+    animation: widthVariations 5s infinite;
 }
-@keyframes widthvariable {
+@keyframes widthVariations {
     0%, 100%{
-        font-variation-settings: "opsz" 48, "wdth" 100, "wght" 0, "slnt" 0;
+        font-variation-settings: "opsz" 48, "wdth" 75, "wght" 500, "slnt" 0;
     }
-    50%{font-variation-settings: "opsz" 48, "wdth" 900, "wght" 0, "slnt" 0;
+    50%{font-variation-settings: "opsz" 48, "wdth" 100, "wght" 500, "slnt" 0;
+    }
+}
+.weight{
+    animation: weightVariations 5s infinite;
+}
+@keyframes weightVariations {
+    0%, 100%{
+        font-variation-settings: "opsz" 48, "wdth" 100, "wght" 200, "slnt" 0;
+    }
+    50%{font-variation-settings: "opsz" 48, "wdth" 100, "wght" 900, "slnt" 0;
     }
 }
     .size
