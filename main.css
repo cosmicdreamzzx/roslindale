@@ -73,7 +73,56 @@ h3{
     
 }
 
+/* animation */
+.weight{
+animation: weightvariable 5s infinite;
+
+}
+@keyframes weightvariable {
+    0%, 100%{
+        font-variation-settings: "opsz" 48, "wdth" 0, "wght" 75, "slnt" 0;
+    }
+    50%{font-variation-settings: "opsz" 48, "wdth" 0, "wght" 100, "slnt" .5;
+    }
     
+}
+
+.width{
+    animation: widthvariable 5s infinite;
+}
+@keyframes widthvariable {
+    0%, 100%{
+        font-variation-settings: "opsz" 48, "wdth" 100, "wght" 0, "slnt" 0;
+    }
+    50%{font-variation-settings: "opsz" 48, "wdth" 900, "wght" 0, "slnt" .5;
+    }
+}
+    .size
+    {
+        animation: sizevariable 5s infinite;
+    }
+    @keyframes sizevariable {
+        0%, 100%{
+            font-variation-settings: "opsz" 10, "wdth" 0, "wght" 0, "slnt" 0;
+        }
+        50%{font-variation-settings: "opsz" 48, "wdth" 0, "wght" 0, "slnt" .5;
+        }
+    }
+
+    .slant{
+        animation: slantvariable 5s infinite;
+    }
+    @keyframes slantvariable {
+        0%, 100%{
+            font-variation-settings: "opsz" 48, "wdth" 0, "wght" 0, "slnt" 0;
+        }
+        50%{font-variation-settings: "opsz" 48, "wdth" 0, "wght" 0, "slnt" -8;
+        }
+    }
+h5{
+    font-size: 40px;
+    color: #EE2A7B;
+}
 /* variable font that changes on hover */
 .variable-font{
     font-weight:1 ;
@@ -140,4 +189,9 @@ a .outline{
     justify-content: center; /* Center vertically */
     height: 80vh;          /* Optional: Make the section take full viewport height */
     text-align: center;     /* Center-align text */
+}
+
+body{
+    background-image: ;
+
 }
