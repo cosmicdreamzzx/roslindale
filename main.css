@@ -69,16 +69,20 @@ grid-area: a;
 /* CSS for the footer */
 footer{
     background-color: #eadfe1;
-    height: 69px;
+    height: 75px;
     color:#EE2A7B;
     text-align: center;
    
 }
-
+footer p {
+    margin-top: 0; /* Ensure no extra margin at the top */
+    padding-top: 5px; /* Adjust this value to move the text down */
+}
 footer p,
 footer p2 {
     margin-bottom: 1%; /* Removes the bottom margin of the first element */
     margin-top: 10%;    /* Removes the top margin of the second element */
+
 }
 
 
