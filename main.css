@@ -102,12 +102,13 @@ grid-area: a;
     display: grid; /* Enable grid layout */
     grid-template-columns: 1fr; /* Single column layout */
     grid-template-rows: auto auto auto auto; /* Define rows for content */
-    gap: 20px; /* Add spacing between rows */
-     /* Center-align text and button */
+    gap: 7x; /* Add spacing between rows */
+   margin-bottom: 0;
+    /* Center-align text and button */
 }
 
 #alphabet .outline {
-    grid-row: 5; /* Place the button in the fourth row */
+    margin-top: 0%; /* Place the button in the fourth row */
     margin: 0 auto; /* Center the button horizontally */
     padding: 10px 20px; /* Add padding for better appearance */
     text-decoration: none; /* Remove underline */
@@ -121,7 +122,7 @@ footer{
     height: 75px;
     color:#EE2A7B;
     text-align: center;
-   
+  margin-top: 0px; 
 }
 footer p {
     margin-top: 0; /* Ensure no extra margin at the top */
