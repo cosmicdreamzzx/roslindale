@@ -11,9 +11,30 @@ body {
         font-family: 'Roslindale';
         font-style: normal;
         font-weight: normal;
-        font-size: xx-large;
+        font-size: 20000px;
         }
-    
+    #alphabet p {
+    color: #EE2A7B;
+    font-size: 20px;
+    animation: animateAlphabet 3s infinite; /* Apply the animation */
+}
+.hero {
+    font-size: 30px;
+}
+@keyframes animateAlphabet {
+    0% {
+        color: #EE2A7B;
+        font-size: 20px;
+    }
+    50% {
+        color: #661d2a;
+        font-size: 25px;
+    }
+    100% {
+        color: #EE2A7B;
+        font-size: 20px;
+    }
+}
     body{
     background-color: #FAC2C4;
     font-family: 'Roslindale', sans-serif;
@@ -32,6 +53,7 @@ body {
 }
 /* how the page wrapper appears on desktop */
 
+
 @media only screen and (min-width:800px){
 .page-wrapper{
 display: grid;
@@ -46,16 +68,24 @@ grid-template-areas:
 #history {
 grid-area: h;
 }
-#history {
+#history p {
     color: #661d2a;
+font-size: 20px;
 }
 /* button styling */
 #variations p {
     color:#661d2a; /* Replace 'your-color-here' with the desired color (e.g., red, #ff0000, rgb(255, 0, 0)) */
+font-size: 20px;
 }
 #variations{
 grid-area: v;
 color: #f0f8ff;
+}
+footer {
+    background-image: url("assets/SVG/AHHH.png"); /* Replace with the path to your new image */
+    background-size: cover; /* Ensures the image covers the entire footer */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 
 
@@ -63,8 +93,27 @@ color: #f0f8ff;
 grid-area: a;
 }
 }
+#alphabet p {
+    color: #EE2A7B;
+    font-size: 20px;
+}
+
 #alphabet {
-    color: #661d2a;
+    display: grid; /* Enable grid layout */
+    grid-template-columns: 1fr; /* Single column layout */
+    grid-template-rows: auto auto auto auto; /* Define rows for content */
+    gap: 20px; /* Add spacing between rows */
+     /* Center-align text and button */
+}
+
+#alphabet .outline {
+    grid-row: 5; /* Place the button in the fourth row */
+    margin: 0 auto; /* Center the button horizontally */
+    padding: 10px 20px; /* Add padding for better appearance */
+    text-decoration: none; /* Remove underline */
+background-color: ; /* Button background color */
+    color: #f0f8ff; /* Button text color */
+    border-radius: 5px; /* Rounded corners */
 }
 /* CSS for the footer */
 footer{
@@ -102,6 +151,27 @@ h3{
     color: #EE2A7B;
 }
 
+#alphabet p {
+    color: #EE2A7B;
+    font-size: 20px;
+    animation: animateAlphabet 3s infinite; /* Apply the animation */
+}
+
+@keyframes animateAlphabet {
+    0% {
+        color: #EE2A7B;
+        font-size: 28px;
+    }
+    50% {
+        color: #661d2a;
+        font-size: 28px;
+    }
+    100% {
+        color: #EE2A7B;
+        font-size: 28px;
+    }
+}
+
 @keyframes weightChange {
     0%, 100%{
         font-variation-settings: "opsz" 10, "wdth" 200, "wght" 75, "slnt" 0;
@@ -114,6 +184,7 @@ h3{
 /* animation */
 .width{
     animation: widthVariations 5s infinite;
+font-size: 60px;
 }
 @keyframes widthVariations {
     0%, 100%{
@@ -124,6 +195,7 @@ h3{
 }
 .weight{
     animation: weightVariations 5s infinite;
+font-size: 60px; 
 }
 @keyframes weightVariations {
     0%, 100%{
@@ -135,6 +207,7 @@ h3{
     .size
     {
         animation: sizevariable 5s infinite;
+    font-size: 60px;
     }
     @keyframes sizevariable {
         0%, 100%{
@@ -146,6 +219,7 @@ h3{
 
     .slant{
         animation: slantvariable 5s infinite;
+    font-size: 60px;
     }
     @keyframes slantvariable {
         0%, 100%{
